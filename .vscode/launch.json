@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "API aws-java-lambda-dynamodb-crud:DynamoDBApp",
+            "invokeTarget": {
+                "target": "api",
+                "templatePath": "${workspaceFolder}/template.yaml",
+                "logicalId": "DynamoDBApp"
+            },
+            "api": {
+                "path": "/Prod/user/?dateOfWeek=1699799070",
+                "httpMethod": "get",
+                "payload": {
+                    "json": {}
+                }
+            }
+        }
+    ]
+}
